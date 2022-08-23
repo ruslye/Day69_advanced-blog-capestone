@@ -101,7 +101,7 @@ class Comment(db.Model):
 def load_user(id):
     return User.query.get(id)
 
-db.create_all()
+# db.create_all()
 
 def admin_only(function):
     @wraps(function)
